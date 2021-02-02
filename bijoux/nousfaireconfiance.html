@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+    <style type="text/css">
+        #divp {
+            display: flex;
+            text-align: center;
+        }
+
+        #divs {
+          align-items: center;
+          display: flex;
+          width: 100%;
+          text-align: left;
+        }
+    
+        .imga {
+            padding-right: 30px;
+        }
+
+        .title {
+          font-weight: 700;
+          letter-spacing: 1px;
+          font-size: 20px;
+          display:inline-block;
+          background-color: #FFF;
+          padding: 2px 6px;
+          border-radius: 5px;
+          color: #00000;
+          line-height:initial;
+        }
+
+        .text {
+          color:#505050;
+          font-size: 16px;
+          line-height:1.1;
+          margin-bottom:0;
+          line-height:1.4;
+
+        }
+
+        .np{
+          margin-top: 1px;
+        }
+
+      @media screen and (max-width: 1000px){
+        #divp {
+          width: 100%;
+          flex-direction: column;
+          margin: 0px;
+        }
+
+        .imga {
+            height: 100px;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+
+        .text {
+        	visibility: hidden;
+        }
+      }
+
+    </style>
+
+  
+
+
+   
+       <div id="divp">
+          <div id="div1">
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0288/9082/4807/files/paiement.png?v=1602514981" alt="image couleur" height="150">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0471/3925/8528/files/SAV_160x160@2x.png?v=1599821509" alt="image résistance" height="150">
+             </div>
+           </div>
+           <div id="div1">
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0288/9082/4807/files/remboursement.png?v=1602514204" alt="image 24H" height="150">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0288/9082/4807/files/freedelivery.png?v=1602514204" alt="image hydratante" height="150">
+             </div>
+          </div>
+       </div>

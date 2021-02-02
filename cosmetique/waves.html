@@ -1,0 +1,224 @@
+<!DOCTYPE=html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>test florian</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+    }
+    html {
+      background-color: white;
+    }
+
+    #divp {
+        width: 100%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: yellow;
+      }
+
+    #divs {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+            }
+
+    #div1 {
+        width: 100%;
+        }
+
+    .ldiv {
+        margin-bottom: 0;
+        }
+        
+    .imga {
+        padding-right: 30px;
+    }
+
+    .title {
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 22px;
+        display:inline-block;
+        background-color: #000;
+        padding: 2px 6px;
+        border-radius: 5px;
+        color: #FFFFFF;
+        line-height:initial;
+    }
+
+    .text {
+        color:#505050;
+        font-size: 16px;
+        line-height:1.1;
+        margin-bottom:0;
+        line-height:1.4;
+    }
+
+    .np {
+        margin-top: 1px;
+    }
+
+    @media screen and (max-width: 1000px){
+        #divp {
+            width: 100%;
+            flex-direction: column;
+        }
+        .imga {
+            height: 100px;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+    }
+
+
+    svg{
+      width: 100%;
+      top: 0;
+      left: 0;
+      animation-name: move-left;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+
+    @keyframes example {
+      0%   {
+        left:0px;
+        top:0px;}
+      
+      50%  {
+        left:-2000px;
+        top:200px;}
+      
+      100% {
+        left:0px; 
+        top:0px;}
+    }
+      </style>
+
+  </head>
+  <body>
+  <!-- Animation Vague SVG -->
+    <div class="ldiv">
+    <svg fill="none" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        
+        <stop offset="100%" stop-color="yellow" />
+      </linearGradient>
+      <path 
+        fill="url(#grad1)" 
+        d="
+          M0 67
+          C 273,183
+            822,-40
+            1920.00,106 
+          
+          V 359 
+          H 0 
+          V 67
+          Z">
+        <animate 
+          repeatCount="indefinite" 
+          fill="url(#grad1)" 
+          attributeName="d" 
+          dur="10s"
+          attributeType="XML"
+          values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+        </animate>
+      </path>
+    </svg>
+  </div>
+
+  <!-- Contenu -->
+  <div id="divp" class="ldiv">
+          <div id="div1">
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0271/2882/3850/files/couleur.png?v=1589970392" alt="image couleur" height="150">
+                 <div>
+                   <span class="title" style="color:#FFFFFF";><STRONG> Pour toutes les peaux</STRONG></span>
+                  <span class="text">
+                    <p class="np"> Notre fond de teint s'adapte à toutes les carnations de peau grâce à sa formule unique et innovante 3 en 1.</p>
+                </div>
+             </div>
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0271/2882/3850/files/resistance.png?v=1589973199" alt="image résistance" height="150">
+                 <div>
+                  <span class="title" style="color:#FFFFFF";><STRONG>Adapté aux conditions extrêmes</STRONG></span>
+                  <span class="text">
+                    <p class="np">Alia assure une résistance à l'eau à la chaleur et à la transpiration.</p>
+                  </span>
+                </div>
+             </div>
+           </div>
+           <div id="div1">
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0271/2882/3850/files/tenue_24h.png?v=1589971732" alt="image 24H" height="150">
+                 <div>
+                  <span class="title" style="color:#FFFFFF";><STRONG>Tenue 24h non stop</STRONG></span>
+                  <span class="text">
+                    <p class="np">Pour une beauté tout au long de la journée, notre fond de tient offre une tenue ultra résistante pendant 24h.</p>
+                  </span>
+                </div>
+             </div>
+             <div id="divs">
+                 <img class="imga" src="https://cdn.shopify.com/s/files/1/0271/2882/3850/files/hydratante.png?v=1589973135" alt="image hydratante" height="150">
+                 <div>
+                  <span class="title" style="color:#FFFFFF";><STRONG>Formule hydratante</STRONG></span>
+                  <span class="text">
+                    <p class="np">Sa fomule à base de gel hydrate la peau en profondeur. Son parfum doux et délicat vous producrera une sensation de bien être et de beauté</p>
+                  </span>
+                </div>
+             </div>
+          </div>
+       </div>
+	</body>
+</html>
